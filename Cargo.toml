@@ -6,4 +6,10 @@ description = "This is HTTP CLI tool."
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+reqwest = { version = "0.11.13", features = ["json"] }
+anyhow = "1.0.68"
 clap = { version = "4.1.1", features = ["derive"] }
+tokio = { version = "1.24.2", features = ["full"] }
+mime = "0.3.16"
+jsonxf = "1.1.1"
+colored = "2.0.0"
